@@ -2,6 +2,7 @@
  * 
  * Copyright (c) 2017 - Patrick Haley
  * https://github.com/pshaley/netsuite-recaptcha/blob/master/netsuite_recaptcha_cs.js
+ * http://www.bcsprosoft.com/blog/netsuite-forms/recaptcha
  *
  * Original Author - Emil Olaguir, Jr.
  * https://pulse.tips/google-recaptcha-for-netsuite-online-forms_58df6fb61723dda223accbef.html
