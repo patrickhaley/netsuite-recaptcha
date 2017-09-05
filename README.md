@@ -1,5 +1,5 @@
 # netsuite-recaptcha
 Documentation for adding Google reCAPTCHA v2 to NetSuite Online Forms.
 
-DImplementation instructions available at
+Implementation instructions available at
 http://www.bcsprosoft.com/blog/netsuite-forms/recaptcha/
