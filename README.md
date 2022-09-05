@@ -25,8 +25,11 @@ First, we need to create our reCAPTCHA. This step requires a Google account, so 
 2.  Click the link to Get reCAPTCHA and click Sign Up.
 3.  Follow the steps to create a new reCAPTCHA V2.
 4.  Enter your NetSuite Domain into the  _Domains_  section. For NetSuite online forms, it will be either  _forms.netsuite.com_  or  _forms.na1.netsuite.com_  depending on which data center your account is hosted. If you’re not sure you can go to one of your existing NetSuite forms and look at the  _Publisher Form URL_  under the  _External_  tab. 
+
 ![reCAPTCHA setup](assets/netsuite-form-recaptcha-setup.png)
+
 5. Click Register and you will be presented with your reCAPTCHA site keys. Leave this page open as we’ll need to paste your site key into the HTML file later.
+
 ![reCAPTCHA key generation](assets/netsuite-form-recaptcha-keys.png)
 
 ## 2. Create an HTML Template and Online Form
@@ -39,7 +42,8 @@ Now we’ll need to create a new Online Customer form from a custom HTML templat
 5.  In NetSuite, create new form and select  _Custom HTML Template_. Give your form a name and under the  _Template_  field choose  _-New-_. Upload the HTML file you just created into the new window and click  _Save_  to close the window.
 6.  Back on the Online Customer Form window, add the First Name, Last Name, and Company Name fields. Make sure the mandatory box is checked for each of them.
 7.  Click Save and leave this window open.
-![Create a NetSuite form](assets/netsuite-form-recaptcha-create.png)
+
+![Create a NetSuite form](assets/netsuite-recaptcha-form-create.png)
 
 ## 3. Create a SuiteScript to Validate the Form
 Previous versions of reCAPTCHA required you to create both a client-side and a server-side script to validate the form submission. However, Google’s new  [reCAPTCHA V2](https://developers.google.com/recaptcha/docs/display)  (where they ask you to click on images instead of typing words), now allows for client-side verification without having to submit the form.
@@ -49,7 +53,8 @@ Previous versions of reCAPTCHA required you to create both a client-side and a s
 3.  Click the plus icon to add a new file to the  _Script File_  field and upload the JavaScript file you just created.
 4.  In the  _Save Record Function_  field enter  _onSubmit_
 5.  Click Save and test the form.
-![Add the form script](assets/netsuite-form-recaptcha-script.png)
+
+![Add the form script](assets/netsuite-recaptcha-form-script.png)
 
 ## 4. Test the Form
 That’s it! Your reCAPTCHA box should now appear and work correctly in your form. Go ahead and test your form by clicking on the External tab and viewing Publishable Form URL. Assuming you followed all of the steps above, your form should be working correctly. There are a number of reasons why you may get an error. A descriptive Google search and Stack Overflow are going to be your best friend here. However, try recreating the site key from scratch and making sure you have it added in your HTML form template. Especially if you’re using a site key previously used or one that may be for reCAPTCHA V1.
