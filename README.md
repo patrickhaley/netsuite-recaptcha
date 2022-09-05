@@ -58,6 +58,7 @@ Previous versions of reCAPTCHA required you to create both a client-side and a s
 
 ## 4. Test the Form
 That’s it! Your reCAPTCHA box should now appear and work correctly in your form. Go ahead and test your form by clicking on the External tab and viewing Publishable Form URL. Assuming you followed all of the steps above, your form should be working correctly. There are a number of reasons why you may get an error. A descriptive Google search and Stack Overflow are going to be your best friend here. However, try recreating the site key from scratch and making sure you have it added in your HTML form template. Especially if you’re using a site key previously used or one that may be for reCAPTCHA V1.
+
 ![Add the form script](assets/netsuite-form-with-recaptcha-test.png)
 
 ## Putting it all Together
